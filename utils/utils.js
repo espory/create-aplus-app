@@ -197,7 +197,7 @@ function checkNpmVersion() {
     };
 }
 
-function install(root) {
+function install(root, downloadOption) {
     // 引入依赖
 
 
@@ -233,7 +233,7 @@ function install(root) {
     runCmd(which.sync(npm), ['install'], function () {
         console.log('\n' + npm + ' install end');
         console.log();
-        console.log(`Success! Created ${chalk.cyan('downloadOption')} at ${chalk.cyan(`${root}`)}`);
+        console.log(`Success! Created ${chalk.cyan(downloadOption)} at ${chalk.cyan(`${root}`)}`);
         console.log();
         console.log(chalk.green('Happy hacking!'));
         console.log();
