@@ -1,0 +1,365 @@
+{
+  "bail": false,
+  "entry": {
+    "app": [
+      "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/lib/webpackHotDevClient.js",
+      "./src/index.jsx"
+    ],
+    "common": ["react", "react-dom", "redux", "react-redux"]
+  },
+  "output": {
+    "path": "/Users/chrisgao/Desktop/aplus/aplus-web/dist",
+    "pathinfo": true,
+    "filename": "[name].js",
+    "chunkFilename": "[name].async.js"
+  },
+  "resolve": {
+    "modules": [
+      "node_modules",
+      "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/node_modules"
+    ],
+    "extensions": [
+      ".web.js",
+      ".web.jsx",
+      ".web.ts",
+      ".web.tsx",
+      ".js",
+      ".json",
+      ".jsx",
+      ".ts",
+      ".tsx"
+    ],
+    "alias": {},
+    "plugins": []
+  },
+  "module": {
+    "rules": [
+      {
+        "test": {},
+        "include": "/Users/chrisgao/Desktop/aplus/aplus-web",
+        "exclude": {},
+        "enforce": "pre",
+        "use": [
+          {
+            "options": { "emitErrors": true },
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_tslint-loader@3.5.4@tslint-loader/index.js"
+          }
+        ]
+      },
+      {
+        "test": {},
+        "include": "/Users/chrisgao/Desktop/aplus/aplus-web",
+        "exclude": {},
+        "enforce": "pre",
+        "use": [
+          {
+            "options": {
+              "baseConfig": false,
+              "ignore": true,
+              "eslintPath": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/eslint/lib/api.js",
+              "useEslintrc": true
+            },
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_eslint-loader@2.2.1@eslint-loader/index.js"
+          }
+        ]
+      },
+      {
+        "exclude": [{}, {}, {}, {}],
+        "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_url-loader@0.6.2@url-loader/index.js",
+        "options": { "limit": 10000, "name": "static/[name].[hash:8].[ext]" }
+      },
+      {
+        "test": {},
+        "include": "/Users/chrisgao/Desktop/aplus/aplus-web",
+        "exclude": {},
+        "use": [
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/lib/debugLoader.js"
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_babel-loader@8.1.0@babel-loader/lib/index.js",
+            "options": {
+              "presets": [
+                [
+                  "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_roadhog@2.5.0-beta.4@roadhog/lib/babel.js",
+                  { "browsers": ["last 2 versions"] }
+                ]
+              ],
+              "plugins": [
+                ["import", { "libraryName": "antd", "style": true }],
+                "dva-hmr"
+              ],
+              "cacheDirectory": true,
+              "babelrc": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "include": "/Users/chrisgao/Desktop/aplus/aplus-web",
+        "use": [
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/lib/debugLoader.js"
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_babel-loader@8.1.0@babel-loader/lib/index.js",
+            "options": {
+              "presets": [
+                [
+                  "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_roadhog@2.5.0-beta.4@roadhog/lib/babel.js",
+                  { "browsers": ["last 2 versions"] }
+                ]
+              ],
+              "plugins": [
+                ["import", { "libraryName": "antd", "style": true }],
+                "dva-hmr"
+              ],
+              "cacheDirectory": true,
+              "babelrc": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "include": "/Users/chrisgao/Desktop/aplus/aplus-web",
+        "exclude": {},
+        "use": [
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/lib/debugLoader.js"
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_babel-loader@8.1.0@babel-loader/lib/index.js",
+            "options": {
+              "presets": [
+                [
+                  "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_roadhog@2.5.0-beta.4@roadhog/lib/babel.js",
+                  { "browsers": ["last 2 versions"] }
+                ]
+              ],
+              "plugins": [
+                ["import", { "libraryName": "antd", "style": true }],
+                "dva-hmr"
+              ],
+              "cacheDirectory": true,
+              "babelrc": false
+            }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_awesome-typescript-loader@3.5.0@awesome-typescript-loader/dist/entry.js",
+            "options": {
+              "configFileName": "/Users/chrisgao/Desktop/aplus/aplus-web/tsconfig.json",
+              "transpileOnly": true
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/lib/debugLoader.js"
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_babel-loader@8.1.0@babel-loader/lib/index.js",
+            "options": {
+              "presets": [
+                [
+                  "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_babel-preset-umi@1.8.4@babel-preset-umi/lib/index.js",
+                  { "disableTransform": true }
+                ]
+              ],
+              "cacheDirectory": true,
+              "babelrc": false
+            }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_file-loader@0.11.2@file-loader/index.js",
+        "options": { "name": "[name].[ext]" }
+      },
+      {
+        "test": {},
+        "use": [
+          "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_style-loader@0.20.3@style-loader/index.js",
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_css-loader@0.28.11@css-loader/index.js",
+            "options": { "importLoaders": 1 }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
+            "options": { "ident": "postcss" }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "include": {},
+        "use": [
+          "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_style-loader@0.20.3@style-loader/index.js",
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_css-loader@0.28.11@css-loader/index.js",
+            "options": { "importLoaders": 1 }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
+            "options": { "ident": "postcss" }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_style-loader@0.20.3@style-loader/index.js",
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_css-loader@0.28.11@css-loader/index.js",
+            "options": { "importLoaders": 1 }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
+            "options": { "ident": "postcss" }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js",
+            "options": { "modifyVars": {} }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "include": {},
+        "use": [
+          "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_style-loader@0.20.3@style-loader/index.js",
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_css-loader@0.28.11@css-loader/index.js",
+            "options": { "importLoaders": 1 }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
+            "options": { "ident": "postcss" }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_less-loader@4.1.0@less-loader/dist/cjs.js",
+            "options": { "modifyVars": {} }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_style-loader@0.20.3@style-loader/index.js",
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_css-loader@0.28.11@css-loader/index.js",
+            "options": { "importLoaders": 1 }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
+            "options": { "ident": "postcss" }
+          }
+        ]
+      },
+      {
+        "test": {},
+        "include": {},
+        "use": [
+          "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_style-loader@0.20.3@style-loader/index.js",
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_css-loader@0.28.11@css-loader/index.js",
+            "options": { "importLoaders": 1 }
+          },
+          {
+            "loader": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_postcss-loader@2.1.6@postcss-loader/lib/index.js",
+            "options": { "ident": "postcss" }
+          }
+        ]
+      }
+    ]
+  },
+  "plugins": [
+    { "options": {}, "fullBuildTimeout": 200, "requestTimeout": 10000 },
+    {},
+    {
+      "sourceMappingURLComment": "\n//# sourceMappingURL=[url]",
+      "fallbackModuleFilenameTemplate": "webpack:///[resourcePath]?[hash]",
+      "options": { "columns": false }
+    },
+    { "definitions": { "process.env.NODE_ENV": "\"development\"" } },
+    {
+      "options": {
+        "template": "./src/template.ejs",
+        "filename": "index.html",
+        "hash": false,
+        "inject": true,
+        "compile": true,
+        "favicon": false,
+        "minify": false,
+        "cache": true,
+        "showErrors": true,
+        "chunks": "all",
+        "excludeChunks": [],
+        "title": "Webpack App",
+        "xhtml": false
+      }
+    },
+    {
+      "options": {},
+      "logger": {},
+      "pathCache": {},
+      "fsOperations": 0,
+      "primed": false
+    },
+    {
+      "options": {
+        "options": {
+          "context": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_af-webpack@0.23.0-beta.1@af-webpack/lib"
+        },
+        "test": {}
+      }
+    },
+    {},
+    { "resourceRegExp": {}, "contextRegExp": {} },
+    {
+      "chunkNames": ["common"],
+      "ident": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_webpack@3.12.0@webpack/lib/optimize/CommonsChunkPlugin.js0"
+    },
+    {},
+    {
+      "_path": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_roadhog@2.5.0-beta.4@roadhog/.run/build-statistics/compilation.json",
+      "_cache": {},
+      "_cabinet": { "_cache": {} },
+      "_isFileChanged": false
+    },
+    {
+      "cwd": "/Users/chrisgao/Desktop/aplus/aplus-web",
+      "tool": {
+        "name": "roadhog",
+        "version": "2.5.0-beta.4",
+        "stagesPath": "/Users/chrisgao/Desktop/aplus/aplus-web/node_modules/_roadhog@2.5.0-beta.4@roadhog/.run/build-statistics/compilation.json"
+      },
+      "buildConfig": {},
+      "satori": {
+        "satoriClient": {
+          "appName": "bigfish-build",
+          "useAppCURL": false,
+          "host": "satori.alipay.com",
+          "protocol": "https",
+          "port": "",
+          "baseUri": "/api",
+          "timeout": 10000,
+          "baseUrl": "https://satori.alipay.com/api"
+        }
+      }
+    }
+  ],
+  "node": {
+    "dgram": "empty",
+    "fs": "empty",
+    "net": "empty",
+    "tls": "empty",
+    "child_process": "empty"
+  },
+  "performance": { "hints": false }
+}

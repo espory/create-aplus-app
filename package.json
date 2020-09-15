@@ -1,0 +1,27 @@
+{
+  "name": "create-aplus-app",
+  "version": "1.0.0",
+  "description": "Create aplus app",
+  "main": "index.js",
+  "bin": {
+    "create-aplus-app": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "espory",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "cross-spawn": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^9.0.1",
+    "https": "^1.0.0",
+    "inquirer": "^7.3.3",
+    "path": "^0.12.7",
+    "semver": "^7.3.2",
+    "validate-npm-package-name": "^3.0.0",
+    "vinyl-fs": "^3.0.3"
+  }
+}

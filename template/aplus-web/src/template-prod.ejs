@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <%% if(local) {%>
+    <link href="<%=`http://127.0.0.1:8000/${htmlWebpackPlugin.files.css[css]}` %>" rel="stylesheet" />
+    <%% } else {%>
+    <link href="<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet" />
+    <%% } %>
+    <% } %>
+</head>
+<body>
+<div id="root"></div>
+<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+<%% if(local) {%>
+<script type="text/javascript" src="<%=`http://127.0.0.1:8000/${chunk}.js` %>"></script>
+<%% } else {%>
+<script type="text/javascript" src="<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+<%% } %>
+<% } %>
+</body>
+</html>
