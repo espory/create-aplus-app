@@ -216,7 +216,7 @@ async function run(root, appName, originalDirectory,) {
         // 将node工作目录更改成构建的项目根目录下
         process.chdir(root);
         // 执行安装命令
-        install(root);
+        install(root, downloadOption);
       })
       .resume();
   }
